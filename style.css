@@ -3,6 +3,14 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background: #f4f4f4;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background: #121212;
+    color: #f4f4f4;
 }
 
 header {
@@ -10,6 +18,17 @@ header {
     color: #fff;
     padding: 1rem;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    background: #555;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
 }
 
 nav ul {
@@ -31,9 +50,15 @@ nav ul li a {
 
 section {
     padding: 2rem;
-    margin: 1rem;
-    background: #f4f4f4;
+    margin: 1rem auto;
+    width: 80%;
+    background: #fff;
     border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode section {
+    background: #222;
 }
 
 footer {
@@ -41,7 +66,4 @@ footer {
     padding: 1rem;
     background: #333;
     color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
